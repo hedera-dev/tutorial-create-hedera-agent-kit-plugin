@@ -12,7 +12,7 @@ Parameters:
 `;
 };
 
-const transferHbar = async (
+const executeHelloWorld = async (
   _client: Client,
   _context: Context,
   params: z.infer<ReturnType<typeof helloWorldParameters>>
@@ -27,7 +27,7 @@ const tool = (context: Context): Tool => ({
   name: "Simple Transfer HBAR",
   description: helloWorldPrompt(context),
   parameters: helloWorldParameters(context),
-  execute: transferHbar,
+  execute: executeHelloWorld,
 });
 
 export default tool;

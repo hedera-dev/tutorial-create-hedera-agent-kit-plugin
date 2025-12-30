@@ -11,6 +11,7 @@ This repository is a learning-friendly scaffold for building Hedera Agent Kit pl
 ```bash
 git clone https://github.com/hedera-dev/tutorial-create-hedera-agent-kit-plugin.git
 cd tutorial-create-hedera-agent-kit-plugin
+npm install
 npm ci
 ```
 
