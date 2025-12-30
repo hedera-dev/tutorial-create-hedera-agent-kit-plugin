@@ -1,6 +1,7 @@
 # Hedera Agent Kit Plugin Template
 
-This repository is a learning-friendly scaffold for building Hedera Agent Kit plugins. It ships with a working `hello-world` tool and a teacher (`AGENTS.md`) that can guide you through creating a `simple-transfer-hbar` tool.
+This repository is a learning-friendly scaffold for building Hedera Agent Kit plugins. It ships with a working
+`hello-world` tool and a teacher (`AGENTS.md`) that can guide you through creating a `simple-transfer-hbar` tool.
 
 ---
 
@@ -52,11 +53,11 @@ If you’re using another agent (Cursor, VS Code extension, etc.), open its chat
 ## Repository Layout
 
 | Path           | Purpose                                                                                  |
-| -------------- | ---------------------------------------------------------------------------------------- |
+|----------------|------------------------------------------------------------------------------------------|
 | `src/index.ts` | Entry point exporting the plugin metadata and registered tools.                          |
 | `src/tools/`   | Individual tool factories (e.g., `hello-world`, `simple-transfer-hbar`).                 |
 | `src/schemas/` | Zod schema factories for tool inputs.                                                    |
-| `examples/`    | Sample scripts (see `examples/cli-chat.ts`, used by `npm test`).                         |
+| `examples/`    | Sample scripts (see `examples/plugin-tool-calling-agent.ts`, used by `npm run:example`). |
 | `AGENTS.md`    | Tutorial-style teacher that coaches a learner through recreating `simple-transfer-hbar`. |
 
 ## Extending the Template
@@ -66,6 +67,7 @@ If you’re using another agent (Cursor, VS Code extension, etc.), open its chat
 - Update `src/index.ts` so the plugin returns every tool you want to expose.
 - Mirror the AGENTS format to create additional guided lessons (e.g., balance checks, topic messages).
 
-When contributing, run `npm run typecheck` and `npm run build` before sharing changes, and consider adding new self-check steps to `AGENTS.md` so future agents learn from the patterns you establish.
+When contributing, run `npm run typecheck` and `npm run build` before sharing changes, and consider adding new
+self-check steps to `AGENTS.md` so future agents learn from the patterns you establish.
 
 Happy building! 🪄
